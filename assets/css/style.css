@@ -1,0 +1,59 @@
+ol.lista_2 {
+    counter-reset: item 7 /* Reseta o li para começar em 7*/;
+    list-style-type: none;
+    display: block;
+}
+
+ol.lista_2 li {
+    counter-increment: item 1; /* Incrementa o contador "item" a partir de 1 */
+  }
+
+  ol.lista_2 li::before {
+    content: counter(item) "."; /* Exibe o número do contador antes de cada item com o ponto */    
+  }
+
+  ol.lista_3 {
+    counter-reset: item 11 /* Reseta o li para começar em 12*/;
+    list-style-type: none;
+    display: block;
+}
+
+ol.lista_3 li {
+    counter-increment: item 1; /* Incrementa o contador "item" a partir de 1 */
+  }
+
+ol.lista_3 li::before {
+    content: counter(item) "."; /* Exibe o número do contador antes de cada item com o ponto */    
+  }
+
+
+.header{
+    display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  flex-direction: column;
+  }
+
+img{
+    width: 450px;
+    height: 350px;
+}
+
+.lista_1{
+    display: flex;
+    justify-content: center;
+}
+
+.lista_2{
+    display: flex;
+    justify-content: center;
+}
+
+.lista_3{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: #d2c4e6;
+}
